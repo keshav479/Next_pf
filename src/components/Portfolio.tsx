@@ -1,12 +1,9 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import project from "../assets/proj3.png"
-import project1 from "../assets/proj2.jpg"
 import book from "../assets/Bookstore.png"
 import face from "../assets/faceemo.png"
-
-import { title } from "process";
+import chat from "../assets/chatbot.png"
 
 const projects = [
     {
@@ -14,7 +11,7 @@ const projects = [
         desc:"Developed an intelligent chatbot application leveraging the MERN stack and TypeScript. Integrated OpenAI API to power conversational AI capabilities",
         devStack:"ReactJS, NodeJS, ExpressJS, MongoDB, API, JWT",
         link:"https://gpt-bot-gamma.vercel.app",
-        src:project
+        src:chat
     },
 
     {
