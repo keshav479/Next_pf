@@ -3,6 +3,9 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import project from "../assets/proj3.png"
 import project1 from "../assets/proj2.jpg"
+import book from "../assets/Bookstore.png"
+import face from "../assets/faceemo.png"
+
 import { title } from "process";
 
 const projects = [
@@ -19,7 +22,7 @@ const projects = [
         desc:"Developed real-time emotion detection system which analyse facial expression in video streams",
         devStack:"CNN, Tensorflow, OpenCV, Python",
         link:"https://github.com/keshav479/Realtime_emotion_detection/tree/master/screenshotsofresult",
-        src:project
+        src:face
     },
 
     {
@@ -27,7 +30,7 @@ const projects = [
         desc:"Developed and deployed a full-featured e-commerce web application using ReactJS, Bootstrap and TailwindCSS",
         devStack:"ReactJS, TailwindCSS",
         link:"https://bookstore-beta-nine.vercel.app",
-        src:project
+        src:book
     },
 ]
 
@@ -39,7 +42,7 @@ const Portfolio = () => {
                 Selected <span className="text-7xl font-bold text-[#E48A57]">Projects</span> 
             </h1>
       
-      <div className="max-w-[1200px] mx-auto mt-40 space-y-24">
+      <div className="px-6 md:px-0 max-w-[1200px] mx-auto mt-40 space-y-24">
         {projects.map((project, index)=>(
           <motion.div
           key={index}
@@ -47,7 +50,7 @@ const Portfolio = () => {
           whileInView={{opacity:1, y:0}}
           viewport={{once:true}}
           transition={{ duration: 0.5, delay: 0.25 }}
-          className={`mt-12 flex ${index %2 === 1 ? "flex-col-reverse md:flex-row-reverse gap-12" : "flex-col md:flex-row"}`}
+          className={`mt-12 flex flex-col ${index %2 === 1 ? "md:flex-row-reverse gap-12" : "md:flex-row"}`}
           >
             <div className="space-y-2 max-w-[550px]">
               <h2 className="text-7xl my-4 text-white/70">{`0${index + 1}`}</h2>

@@ -5,7 +5,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 const navLinks = [
-    { title: "About", path: "#about" },
+    { title: "", path: "#" },
     { title: "Portfolio", path: "#portfolio" },
 ];
 

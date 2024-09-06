@@ -19,19 +19,19 @@ const Contact = () => {
             </li>
             <li className="flex items-center">
                 <Image src={linkedin} alt="phone" className="h-[110px] w-auto mr-6"/>
-                <p className="text-xl"><a href="https://www.linkedin.com/in/keshav-lavania-942a33267/">LinkedIn</a></p>
+                <p className="text-xl"><a className="hover:text-orange-600" href="https://www.linkedin.com/in/keshav-lavania-942a33267/">LinkedIn</a></p>
             </li>
         </ul>
       </div>
       <div className="bg-white/10 p-6 rounded-xl max-w-[550px]">
         <h2 className="text-5xl font-bold text-orange-400 mb-4">Let's Connect</h2>
-        <p>Send me a message and lets schedule a call!</p>
-        <form className="space-y-4 mt-4">
+        <p>Send me a message and let's schedule a call!</p>
+        <form className="space-y-4 mt-4" action="https://getform.io/f/bvrenzrb" method="POST">
             <div className="grid md:grid-cols-2 gap-4">
-                <input className="bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder="First Name"/>
-                <input className="bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder="Last Name"/>
-                <input className="bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder="Email"/>
-                <input className="bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder="Phone"/>
+                <input type="text" name="name" className="bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder="First Name"/>
+                <input type="text" name="name" className="bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder="Last Name"/>
+                <input type="email" name="email" className="bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder="Email"/>
+                <input type="phone" name="phone" className="bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder="Phone"/>
             </div>
             <textarea className="bg-black/70 w-full rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400" placeholder="Your Message"/>
             <button className="bg-orange-700 hover:bg-orange-500 text-white px-6 py-2 w-full font-semibold text-xl rounded-xl">Send Message</button>

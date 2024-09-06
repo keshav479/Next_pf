@@ -20,10 +20,10 @@ const Hero = () => {
                     <h1 className="text-[#E48A57]">Keshav Lavania</h1>
                 </div>
 
-                <motion.div className="absolute left-[80px] top-[70px]" drag>
+                <motion.div className="hidden md:block absolute left-[80px] top-[70px]" drag>
                     <Image src={cursor} height="170" width="170" alt="cursor" className="" draggable="false" />
                 </motion.div>
-                <motion.div className="absolute right-[17px] top-[200px]" drag>
+                <motion.div className="hidden md:block absolute right-[17px] top-[200px]" drag>
                     <Image src={best} height="220" width="220" alt="cursor" className="" draggable="false" />
                 </motion.div>
 
